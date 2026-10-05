@@ -1,5 +1,27 @@
 # Changelog
 
+## 1.3.0 — Easier answering and earlier interest check
+Based on a full test run (a family trip to Washington, DC):
+1. At most 4 questions per reply, one thing per question, each with lettered options and “Not sure”; shorthand answers like “1B 2A” are invited.
+2. Uses the platform's clickable multiple-choice question tool when available (e.g., in Claude Code), with the recommended option first.
+3. The past-trips question is split into “what did the family love?” and “what did the family dislike?”
+4. New Step 4, destination highlights: 8–12 headline experiences right after the Group Profile so the user can say what appeals before detailed research. Later steps renumbered (now 10 steps).
+5. The activity menu has a pre-filled “My pick” column; the user can accept with changes in one line, use shorthand, or click through by category.
+
+## 1.2.0 — Any trip type, user-chosen activities, clearer decisions
+Based on a full test run (a family trip to Yosemite):
+1. Works for any trip type (sightseeing/landmarks, city, outdoors, beach, theme parks, road trips); ability questions now match the trip instead of always asking about hiking.
+2. Discovery asks about lodging type (hotel, vacation rental, cabin, camping, etc.) and how the group will get around (rental car, own car, transit, mix).
+3. “Not sure” is always acceptable; undecided items go on an Open decisions list and are resolved later with options and a recommendation.
+4. Budget is asked in a defined form (total vs. per person per day; whether flights/lodging are included) or “help me estimate.”
+5. Removed questions that assume the user knows the destination (e.g., naming the hardest hike); effort ladders in the activity menu replace them.
+6. New Step 5 activity menu (`templates/activity-menu.md`): the user marks options Must / Want / Maybe / Skip before any itinerary is drafted.
+7. Every reply that needs the user ends with a “Your input needed” list with recommendations; stress-test items are labeled Applied or Needs your OK.
+8. A one-page DRAFT visual itinerary is produced with the first draft, regenerated on revisions; tested PNG rendering via headless Chrome/Edge.
+9. Every proposed activity, lodging and booking item includes its own link; only URLs actually retrieved may be used.
+10. Decisions are AGREED on a “yes” and LOCKED only when the user explicitly locks them; unconfirmed details are labeled PLACEHOLDER.
+11. Added a Washington, DC worked example for a city/landmark trip.
+
 ## 1.1.0 — Packaging for public release
 Methodology unchanged; packaging and portability improvements:
 1. Added Agent Skills frontmatter (`name`, `description`) to SKILL.md so it loads as a skill.
