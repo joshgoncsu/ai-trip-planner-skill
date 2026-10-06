@@ -8,6 +8,8 @@ Ask at most 4 questions per round, one thing per question, each with lettered or
 - Dates / number of nights / flexibility:
 - Starting location:
 - Getting there: fly / drive / train / not sure
+- Arrival time on Day 1 (flight landing or expected arrival by car):
+- Departure time on the last day (flight time or when you want to leave):
 - Getting around: rental car from airport / own car / public transit, shuttles, rideshare / mix / not sure
 - Where to stay: hotel / vacation rental (Airbnb, VRBO) / cabin / camping or RV / resort / with family / other / not sure
 - Bases: one / several / not sure
@@ -52,6 +54,13 @@ Mark what appeals (multi-select):
 - Downtime:
 - Long days in a row:
 - Driving / transit tolerance per day:
+
+## Meals
+- Usual meal times (breakfast / lunch / dinner):
+- How quickly the kids get hungry; snack needs:
+- Preferred style: sit-down / quick or casual / picnic / cook at the rental / mix / not sure
+- Breakfast included or kitchen at lodging:
+- Any meal that is a highlight (special restaurant, food tour, local specialty):
 
 ## Ability (ask only what fits the trip)
 ### Every trip

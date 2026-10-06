@@ -1,7 +1,7 @@
 # Roadmap — AI Trip Planner
 
 ## Current release
-**v1.3.0 — Conversational planning methodology for any trip type (packaged as an Agent Skill)**
+**v1.4.0 — Conversational planning methodology for any trip type (packaged as an Agent Skill)**
 
 The current skill establishes the core workflow:
 

@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.4.0 — Realistic day timing and smarter meals
+Adapted from the rules-based scheduling in a companion trip-planner project:
+1. New **Day timing** section in SKILL.md, applied whenever a day is drafted, revised or stress-tested.
+2. Every travel leg gets a +10% buffer; every drive also gets parking/walk-in time at both ends (5 / 10–15 / 20–30 min defaults by site type), with arrive-by times for lots that fill early.
+3. Arrival and departure times are asked in Step 1. Day 1 starts after bags, rental pickup and transfer; the last day ends before airport buffer, rental return and transfer. Unknown times become PLACEHOLDERs.
+4. Opening hours are checked against each scheduled date: day-of-week and seasonal closures, holidays, last entry, shuttle last-return. Unstated hours are never assumed open, and hours are re-checked when an activity moves to another day.
+5. Meals are planned around the group's own rhythm and the shape of each day (picnic on trail days, eat at the venue, early dinner after long days), with duration by meal style, travel to the restaurant, snack breaks, remote-area food warnings, and a named meal that flexes when the day runs late. Restaurants are named only where it matters; reservation-needed ones go on the booking checklist.
+6. Intake, Group Profile and Master Trip Plan templates gained meal and travel-day fields; Step 8 stress test checks all of the above.
+
 ## 1.3.0 — Easier answering and earlier interest check
 Based on a full test run (a family trip to Washington, DC):
 1. At most 4 questions per reply, one thing per question, each with lettered options and “Not sure”; shorthand answers like “1B 2A” are invited.

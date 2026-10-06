@@ -17,7 +17,12 @@ _Status: DRAFT / LOCKED · Last updated: [date]_
 ## 7. Lodging
 ## 8. Master itinerary
 ## 9. Detailed day plans
-Each activity links to its official site.
+Each activity links to its official site. For each day:
+- Usable hours (clipped on arrival and departure days, with the arithmetic)
+- Activities with opening hours / last entry checked for that date
+- Travel legs: time + 10% buffer + parking on drives
+- Meals: time, style, where (named restaurant or 2–3 linked options), and which meal flexes if the day runs late
+- Snack breaks, remote stretches with no food
 ## 10. Alternatives and contingencies
 ## 11. Cost classification and estimate
 ### FREE / INCLUDED
@@ -26,6 +31,8 @@ Each activity links to its official site.
 ### $$$
 ### Trip cost estimate (in the user's chosen budget form)
 ## 12. Booking / research checklist
+Include restaurant reservations and any hours marked UNVERIFIED.
+
 | Item | Link | Book by | Status |
 |---|---|---|---|
 ## 13. Decision log

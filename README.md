@@ -1,6 +1,6 @@
 # AI Trip Planner Skill
 
-Version 1.3.0. A reusable, model-agnostic workflow for planning detailed family/group trips of any kind (sightseeing and landmarks, cities, national parks and outdoors, beach, theme parks, road trips) with Claude, ChatGPT, Gemini, or any AI tool that supports the [Agent Skills](https://agentskills.io) `SKILL.md` format.
+Version 1.4.0. A reusable, model-agnostic workflow for planning detailed family/group trips of any kind (sightseeing and landmarks, cities, national parks and outdoors, beach, theme parks, road trips) with Claude, ChatGPT, Gemini, or any AI tool that supports the [Agent Skills](https://agentskills.io) `SKILL.md` format.
 
 ## What it does
 The planner follows **ASK → OFFER OPTIONS → USER CHOOSES → DRAFT → CHALLENGE → REVISE → LOCK → DOCUMENT**.

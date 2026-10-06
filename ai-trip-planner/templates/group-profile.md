@@ -29,6 +29,18 @@ Include only rows that fit this trip.
 - Recovery:
 - Long days in a row:
 
+## Meals
+- Usual times:
+- Hunger / snack needs:
+- Preferred style:
+- Dietary needs / allergies:
+- Lodging breakfast or kitchen:
+- Highlight meals:
+
+## Travel days
+- Arrival (Day 1):
+- Departure (last day):
+
 ## Budget
 - Form and what it includes:
 - Amount or “help me estimate”:
