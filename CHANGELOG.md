@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.0.0 — Know more, ask less
+Discovery is rebuilt around inference instead of questionnaires:
+1. Steps 1–2 are now three rounds of 4 questions (v1 asked roughly 25–30): where, when, who's going, whose needs set the limits; a pace scenario, what makes a day great, what ruins a day, evenings and bedtime; one ability question matched to the trip type, spending comfort, getting there, and what's already booked. Starting point, dietary details and booking details are follow-ups in Step 3; a missing season is asked for right away.
+2. Pace is chosen as a described day (Full / Steady / Slow mornings / Mixed) that sets the day window and a day-fill target (about 65–85% of the window, never above 85%), instead of six separate pace questions.
+3. New **Calibration defaults** in SKILL.md: default day shape, meal times, walking range and attention span by age band (the person who tires first sets each default), plus inferred heat, crowd, driving, budget and trip-type defaults.
+4. Every Group Profile line is labelled **Told me** or **Assumed** (with confidence), and later contradictions are called out and fixed. A **Check these first** list names the 2–3 items that would change the plan most: risky assumptions, clashes between the answers and the destination (with a proposed handling), and booking urgency for high-demand destinations or seasons. The profile ends with a short **Please confirm** list (at most 4 lettered questions with recommendations) so the user knows exactly what to answer.
+5. Removed from discovery: the 22-item interest menu, the meal questions, the cost-tier question, and lodging type / bases / getting around (now Open decisions resolved in Step 5). Arrival and departure times are asked once travel is booked; the home airport is asked at Step 5, just before arrival airports are compared. Day-fill adjustments are capped at 10 points in total, with a 60% floor, and an older adult is treated as limiting only when flagged. The person who tires first sets the shared core of the day; larger groups get optional early starts, late extensions or split activities, and walking-heavy destinations get a mobility-aid suggestion. Follow-ups on booked items are asked with the Step 3 confirmation, and Step 5 accounts for group size when comparing vehicles.
+6. Ride limits, altitude, water/sand/snow, long tours and accessibility details are asked just in time at Step 6, only when a menu option needs them.
+7. All clock times are written with AM/PM.
+8. The skill's stated goal is now to get the most out of the trip for the group: the best experiences, stacked realistically.
+
 ## 1.4.0 — Realistic day timing and smarter meals
 Adapted from the rules-based scheduling in a companion trip-planner project:
 1. New **Day timing** section in SKILL.md, applied whenever a day is drafted, revised or stress-tested.

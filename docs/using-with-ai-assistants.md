@@ -10,7 +10,7 @@ Tools with native skill support (Claude Code, Claude.ai, and other Agent Skills�
 
 ## Starter prompt
 
-> Use the attached AI Trip Planner skill (SKILL.md) to plan my trip, following its workflow step by step. Ask at most 4 questions at a time, one thing each, with lettered options so I can answer like “1B 2A”, and tell me “not sure” is an OK answer. Show me destination highlights early, then an activity menu with links and your pre-filled picks that I can accept or change before you build any itinerary. End each reply with a clear “Your input needed” list. Only lock decisions when I say “lock that in.” Once there's a draft itinerary, make a one-page visual of it.
+> Use the attached AI Trip Planner skill (SKILL.md) to plan my trip, following its workflow step by step. Ask at most 4 questions at a time, one thing each, with lettered options so I can answer like “1B 2A”, and tell me “not sure” is an OK answer. Keep discovery to the skill's three short rounds, assume the rest from its calibration defaults, and show me which profile items you assumed so I can correct them. Show me destination highlights early, then an activity menu with links and your pre-filled picks that I can accept or change before you build any itinerary. End each reply with a clear “Your input needed” list. Only lock decisions when I say “lock that in.” Once there's a draft itinerary, make a one-page visual of it.
 
 ## Resuming a trip later
 Paste or attach your saved Master Trip Plan and say:

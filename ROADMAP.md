@@ -1,9 +1,9 @@
 # Roadmap — AI Trip Planner
 
 ## Current release
-**v1.4.0 — Conversational planning methodology for any trip type (packaged as an Agent Skill)**
+**v2.0.0 — Know more, ask less: calibration redesign** (section 1 below)
 
-The current skill establishes the core workflow:
+Built on v1's core workflow:
 
 **ASK → PROPOSE → CHALLENGE → REVISE → LOCK → DOCUMENT**
 
@@ -20,7 +20,7 @@ To do that while asking less, build experienced-planner judgment into the skill 
 
 "Get the most out of it" means **more value per hour, not more hours**: smart stacking, routing and timing make room for more of the best experiences, while the day-fill and rhythm rules below keep the plan realistic.
 
-v1 asks roughly 25–30 discovery questions (7+ rounds) before the user sees anything about the destination. v2 should reach the first proposal (destination highlights) in **8 questions or fewer, over 2–3 rounds**, without losing plan quality.
+v1 asks roughly 25–30 discovery questions (7+ rounds) before the user sees anything about the destination. v2 reaches the first proposal (destination highlights) in **3 rounds of 4 questions**: 4 trip basics (where, when, getting there, what's already booked) plus the 8 core calibration questions below, without losing plan quality. Starting point, dietary and booking details are Step 3 follow-ups.
 
 ## Guiding principles
 1. **Ages first, then infer.** Ages and group composition imply most defaults: naps, attention span, meal timing, walking range, bedtime.
@@ -30,13 +30,13 @@ v1 asks roughly 25–30 discovery questions (7+ rounds) before the user sees any
 5. **Ask just in time.** Ability questions (ride heights, elevation, water) are asked only when an activity needing them reaches the shortlist.
 6. **Never trade away honesty.** Fewer questions must not mean silent guesses: every inference is labelled and revisitable.
 
-## 1. Calibration redesign (v2.0)
+## 1. Calibration redesign (v2.0 — implemented)
 
 Replace the Step 1–2 question set with a short core set:
 
 **Round A — Who's going**
 1. **Who's going?** Free text, e.g. "2 adults, kids 7 and 11, grandma 72."
-2. **Whose needs set the limits?** Multi-select: young child (naps/stroller) / older or less-mobile adult / medical or accessibility need / dietary or allergy need / no one, we're all similar.
+2. **Whose needs set the limits?** Multi-select: young child (naps/stroller) / an adult who tires sooner or has trouble walking / medical or accessibility need / dietary or allergy need / no one, we're all similar.
 
 **Round B — Pace and feel**
 
@@ -52,7 +52,7 @@ Replace the Step 1–2 question set with a short core set:
 
 **Round C — Limits and money**
 
-6. **One ability question that fits the trip type.** For example, outdoors: "Longest recent hike, and how did it end?" (happy / tired but fine / meltdown / someone got carried). City: "How long into a sightseeing day before someone starts to fade?"
+6. **One ability question that fits the trip type.** For example, outdoors: "Which is closest to the longest hike the people on this trip did recently and enjoyed?" (under 2 mi flat / 2–4 mi some climbing / 4–7 mi or 1,000+ ft / 7+ mi or a big climb). City: "How long into a sightseeing day before someone starts to fade?"
 7. **How do you feel about spending?** Value-conscious / middle of the road / splurge on the highlights / not a concern. Exact budgets come later through "help me estimate" in Step 5.
 8. **How late do your evenings usually run?** E.g., back at the lodging by 7:30 PM with kids in bed by 8:00 PM / out until about 9:00 PM sometimes / late nights are fine. Ask for the kids' usual bedtime (AM/PM) when children are in the group. Combined with the evening interests in Q4, this lets the planner propose evening ideas.
 

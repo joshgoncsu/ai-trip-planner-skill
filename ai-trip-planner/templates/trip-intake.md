@@ -1,87 +1,48 @@
 # Trip Intake
-“Not sure” is an acceptable answer to every item. Record it under Open decisions.
-Ask at most 4 questions per round, one thing per question, each with lettered or clickable options.
+Three rounds, at most 4 questions each, one thing per question. “Not sure” is an acceptable answer to every item; record it under Open decisions.
+Everything not asked here is filled in from **Calibration defaults** (SKILL.md) and shown as **Assumed** in the Group Profile.
 
-## Trip type and basics
-- Destination(s) / region:
-- Trip type: sightseeing/landmarks / city / outdoors & national parks / beach / theme parks / road trip / cultural & historical / mix / not sure
-- Dates / number of nights / flexibility:
-- Starting location:
-- Getting there: fly / drive / train / not sure
-- Arrival time on Day 1 (flight landing or expected arrival by car):
-- Departure time on the last day (flight time or when you want to leave):
-- Getting around: rental car from airport / own car / public transit, shuttles, rideshare / mix / not sure
-- Where to stay: hotel / vacation rental (Airbnb, VRBO) / cabin / camping or RV / resort / with family / other / not sure
-- Bases: one / several / not sure
-- Already booked or decided:
+## Round 1 — Where, when, who
+1. Where (destination or region): _free text_
+2. When and how long (dates or month, nights): _free text_ — if missing, ask for at least a month or season in the next round
+3. Who's going (ages): _free text, e.g. “2 adults, kids 7 and 11, grandma 72”_
+4. Whose needs set the limits: young child (naps or stroller) / an adult who tires sooner or has trouble walking / medical or accessibility need / dietary or allergy need / no one
 
-## Group
-- Adults:
-- Children / ages:
-- Multiple families:
-- Mobility / accessibility / health:
-- Big differences in stamina or interests:
+## Round 2 — Pace and feel
+5. Which day sounds like your group:
+   - A) Full days: out by 7:30 AM, 2–3 big things, back after 8:00 PM
+   - B) Steady: out by 9:00 AM, one big + one smaller, break about 2:00–4:00 PM, back by 7:00 PM
+   - C) Slow mornings: out by 10:00 AM, one main activity, downtime after 3:00 PM, early night
+   - D) Mixed: alternate full days and lighter days
+6. What makes a day great (multi-select): big views / hands-on and interactive / animals / water / great food / thrills / history and stories / unstructured time / evening outings
+7. What ruins a day (multi-select): lines / long drives / too much walking / heat / early alarms / too many museums / crowds
+8. How late evenings run (and kids' usual bedtime, AM/PM):
 
-## Interests
-Loved on past trips (ask separately):
-Disliked on past trips (ask separately):
-Mark what appeals (multi-select):
-- Famous landmarks / sightseeing:
-- Museums (history, art, science):
-- Food / food tours / special restaurants:
-- Shows, performances, sports events:
-- Shopping / markets:
-- Theme or amusement parks:
-- Zoos / aquariums:
-- Beaches, pools, water activities, boat tours:
-- Nature, scenery, scenic drives:
-- Hiking / biking:
-- Wildlife:
-- Photography / stargazing:
-- Kid-focused activities:
-- Downtime / relaxation:
+## Round 3 — Limits and money
+9. One ability question for the trip's main type (skip for a relaxed beach or resort trip):
+   - Outdoors: longest recent hike the people on this trip enjoyed — under 2 mi flat / 2–4 mi some climbing / 4–7 mi or 1,000+ ft / 7+ mi or big climb / not sure
+   - City or museums: on their feet before someone fades — ~2 hrs / 3–4 hrs / 5–6 hrs / all day with breaks
+   - Theme parks: park-day stamina — half day / until mid-afternoon / open to close
+   - Road trip: most driving in a day that felt OK — under 3 hrs / 3–5 / 5–7 / 7+
+10. Spending: value-conscious / middle of the road / splurge on the highlights / not a concern
+11. Getting there: fly / drive / train / not sure
+12. Already booked: flights / lodging / car / tickets or permits / nothing yet (drop options that don't apply)
 
-## Budget
-- Form: A) total incl. travel and lodging / B) total excluding flights / C) per person per day for food and activities / D) help me estimate
-- Amount (or “help me estimate”):
-- What is worth paying more for:
-- Cost tiers OK? ($ <$25, $$ $25–75, $$$ >$75 per person)
+## Step 3 follow-ups (in the Please confirm list)
+- Starting point: home city, or home airport if flying
+- Dietary needs or allergies, if Q4 flagged them
+- Details of anything booked (flight times, lodging location)
 
-## Pace
-- Earliest start / how often:
-- Latest bedtime:
-- Big activities per day:
-- Downtime:
-- Long days in a row:
-- Driving / transit tolerance per day:
-
-## Meals
-- Usual meal times (breakfast / lunch / dinner):
-- How quickly the kids get hungry; snack needs:
-- Preferred style: sit-down / quick or casual / picnic / cook at the rental / mix / not sure
-- Breakfast included or kitchen at lodging:
-- Any meal that is a highlight (special restaurant, food tour, local specialty):
-
-## Ability (ask only what fits the trip)
-### Every trip
-- Comfortable walking/standing per day:
-- Lines and crowds tolerance:
-- Heat / cold tolerance:
-### If outdoors is in scope
-- Recent real hike (distance, climbing, terrain, how it went):
-- Water / sand / snow experience:
-- Elevation experience:
-### If museums / tours are in scope
-- How long the kids stay engaged:
-### If theme parks are in scope
-- Ride height / thrill limits:
-- Full park-day stamina:
-
-## Constraints
-- Food / allergies:
-- Weather concerns:
-- School / work:
-- Other:
+## Not asked during discovery
+| Item | Where it comes from |
+|---|---|
+| Trip type | Destination + Q6 |
+| Meal times, snacks, meal style | Age defaults + pace |
+| Walking, heat, crowds, driving tolerance | Age defaults + Q7 + Q9 |
+| Budget amount, cost tiers | Q10; “help me estimate” in Steps 5–6; default tiers |
+| Lodging type, bases, getting around | Open decisions → Step 5 |
+| Arrival and departure times | Step 3 follow-up if booked, otherwise Step 5; PLACEHOLDER until known |
+| Ride limits, altitude, water/sand/snow, long tours, accessibility details | Just in time at Step 6, only if a menu option needs it |
 
 ## Open decisions
 | Decision | Status (not sure / leaning) | Resolve at step |
