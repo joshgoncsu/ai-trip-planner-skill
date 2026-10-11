@@ -1,7 +1,7 @@
 # Roadmap — AI Trip Planner
 
 ## Current release
-**v2.0.0 — Know more, ask less: calibration redesign** (section 1 below)
+**v2.1.0 — Fewer, clearer stress-test findings** (hard days, travel-leg tolerance, opening-hours and meal-window rules, conflicts-first stress-test report; see CHANGELOG), on top of **v2.0.0 — Know more, ask less: calibration redesign** (section 1 below)
 
 Built on v1's core workflow:
 
@@ -67,7 +67,7 @@ Follow-up only when Q2 flags it: **What dietary needs or allergies should I plan
 
 **Group Profile changes:** each line is labelled **Told me** or **Assumed** (with confidence). A later answer that contradicts an assumption is called out and the profile is updated.
 
-## 2. Planning playbook (v2.1)
+## 2. Planning playbook (v2.2)
 
 A new reference file, `references/planning-playbook.md`, holds the planner knowledge the skill applies by default instead of asking for it. The first source is the **adventure-dashboard** project's specs and engine defaults, refined by interviewing the maintainer. Contents:
 - **Default profiles by group type and age band** (toddler, school-age, teens, adults only, multigenerational): walking range, attention span, nap/bedtime, meal rhythm, heat tolerance.
@@ -98,10 +98,10 @@ A new reference file, `references/planning-playbook.md`, holds the planner knowl
   - Flag stretches with no food and plan packed food plus a grocery stop.
 - **Day-shaping rules:** fill only part of the usable day (slack target), pace-to-capacity mapping, where meals and check-in/check-out sit, transfer-day handling. Decided so far:
   - **Day fill:** start from adventure-dashboard's range (about 64% of the usable day at the slowest pace up to 85% at the fullest) and adjust up or down from the calibration answers.
-  - **Trip rhythm:** no more than 2 hard days in a row by default. The lighter day after them backs off by about 10%; it is not a day off.
+  - **Trip rhythm:** no more than 2 hard days in a row by default (shipped in v2.1.0). The lighter day after them backs off by about 10%; it is not a day off.
   - **Ages shape the day:** ages set defaults for start time, midday break, dinner time and bedtime; the pace answer overrides.
   - **Evenings:** come from calibration (Q4 evening interests + Q8 bedtime), not a fixed rule. The planner proposes evening ideas that fit.
-  - **Hard day:** a day filled to about 80% or more of the usable day, or one with an activity rated Strenuous or harder for this group.
+  - **Hard day:** v2.1.0 defines it by when the group leaves and gets back (outside the day window); day fill is a drafting target, not a hard-day test. Still open: also count a day with an activity rated Strenuous or harder for this group.
   - **Early start → early finish:** a day that starts very early for an activity ends a little earlier.
   - **Late night → no early start:** a day that ends very late is not followed by an early start the next morning.
   - **Day-trip reach:** up to 45 minutes each way from the lodging by default; up to about 90 minutes for a Must-level activity, stated explicitly.
@@ -119,7 +119,7 @@ A new reference file, `references/planning-playbook.md`, holds the planner knowl
 - **Booking knowledge:** high-scarcity items, typical reservation lead times by category, lottery/permit patterns.
 - **Rules of thumb for what depends on what:** "rain → slot canyons off", "late arrival → drop the optional item", "group size > permit limit → split or substitute".
 
-## 3. Effort model and stress test (v2.2)
+## 3. Effort model and stress test (v2.3)
 
 Use the playbook to:
 - Estimate activity effort beyond mileage/time (physical, logistical, transition, weather sensitivity, kid-engagement risk, recovery impact), with no extra user questions.
@@ -147,9 +147,12 @@ These items were in the earlier v2 plan. They are deferred because they either a
 Calibration redesign: the core question set, inference from ages, Told me / Assumed profile.
 
 ### v2.1.0
-Planning playbook, seeded from adventure-dashboard and the maintainer interview.
+Fewer, clearer stress-test findings: hard days, travel-leg tolerance, opening-hours and meal-window rules, conflicts-first report (released).
 
 ### v2.2.0
+Planning playbook, seeded from adventure-dashboard and the maintainer interview.
+
+### v2.3.0
 Effort model and expanded stress test built on the playbook.
 
 ### v3.x
