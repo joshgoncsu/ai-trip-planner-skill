@@ -20,7 +20,7 @@ _Status: DRAFT / LOCKED · Last updated: [date]_
 Each activity links to its official site. For each day:
 - Usable hours (clipped on arrival and departure days, with the arithmetic)
 - Activities with opening hours / last entry checked for that date
-- Travel legs: time + 10% buffer + parking on drives
+- Travel legs: time + 10% buffer + parking at each end on drives (timetabled legs use the schedule)
 - Meals: time, style, where (named restaurant or 2–3 linked options), and which meal flexes if the day runs late
 - Snack breaks, remote stretches with no food
 ## 10. Alternatives and contingencies

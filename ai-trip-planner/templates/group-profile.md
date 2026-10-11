@@ -27,6 +27,7 @@ The 2–3 items that would change the plan most: risky assumptions, clashes betw
 | Pace (A / B / C / D) | | |
 | Day window (AM/PM) | | |
 | Day fill target | | |
+| Hard days (limit in a row, e.g. no more than 2) | | |
 | Main activities per day | | |
 | Midday break / nap | | |
 | Back at lodging / kids' bedtime | | |

@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.1.0 — Fewer, clearer stress-test findings
+Based on a 10-day test draft whose stress test buried a few real conflicts among many passes and repeated per-day notes:
+1. New **Hard days** default in Calibration defaults: a day is hard when the group leaves before the day window starts or gets back after it ends (meals and rest at the lodging don't count). No more than 2 in a row, then a lighter day; the user's own limit overrides. A run of hard days is reported once.
+2. A tight travel leg is a problem only when travel + buffer misses the time available by more than about 15 minutes; otherwise keep the plan with an arrive-by time or a note. Parking is charged at each end by its own kind of site (the lodging counts as a small site), and timetabled legs (flights, trains, ferries) use the schedule with no buffer or parking.
+3. Sites that are open 24 hours or have no gate skip the hours check (permits, road closures and conditions still apply); all unverified hours go on the research checklist as one item.
+4. Meals within about 30 minutes of their window count as on time; beyond that, the user is asked and the flexing meal is named.
+5. Day fill is a drafting target, not a per-day stress-test finding; a meal eaten during an activity counts once.
+6. The Step 8 stress test reports real conflicts first, then items that need the user's OK, summarizes applied items in one line, and reports a pattern once instead of per day or per activity.
+7. Group Profile gained a **Hard days** row; the Master Trip Plan's travel-leg line notes parking at each end and timetabled legs.
+
 ## 2.0.0 — Know more, ask less
 Discovery is rebuilt around inference instead of questionnaires:
 1. Steps 1–2 are now three rounds of 4 questions (v1 asked roughly 25–30): where, when, who's going, whose needs set the limits; a pace scenario, what makes a day great, what ruins a day, evenings and bedtime; one ability question matched to the trip type, spending comfort, getting there, and what's already booked. Starting point, dietary details and booking details are follow-ups in Step 3; a missing season is asked for right away.

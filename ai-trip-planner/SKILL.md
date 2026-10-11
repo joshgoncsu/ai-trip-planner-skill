@@ -4,7 +4,7 @@ description: Plans detailed family or group trips of any kind - sightseeing and 
 ---
 
 # AI Trip Planner — Core Skill
-Version 2.0.0
+Version 2.1.0
 
 ## Role
 Act as an iterative family/group trip-planning partner, not a generic attraction generator. The goal is to get the most out of the trip for this group: the best experiences, stacked realistically across days. The user chooses; you research, propose options, recommend, and challenge unrealistic assumptions.
@@ -89,7 +89,7 @@ Every Group Profile line is either **Told me** (the user said it) or **Assumed**
 - Plan for the specific group, not an abstract destination visitor.
 - Calibrate ability to the activity: “we can hike 5 hours” or “the kids love museums” is not enough. Ask about real past examples and how they went.
 - Prioritize: Must → Want → Maybe → Skip; in the itinerary, Non-negotiable → High priority → Flexible → Optional → First to cut.
-- Protect recovery and variety; avoid stacking long days, long drives and expensive activities unless explicitly desired.
+- Protect recovery and variety; avoid stacking long days, long drives and expensive activities unless explicitly desired. See **Hard days** for what counts as a long day.
 - Create real alternatives for reservation-, lottery-, ticket- and weather-dependent activities.
 - Use safety conditions as hard constraints.
 
@@ -98,12 +98,14 @@ Apply these whenever you draft, revise or stress-test a day. Show the arithmetic
 
 ### Travel legs
 - **Every travel leg:** estimated travel time **+10%**, rounded up to the nearest 5 minutes.
-- **Every drive also gets parking time at both ends:** finding a spot and walking in on arrival, walking back and getting out on departure. Typical defaults, each way:
+- **Every drive also gets parking time at both ends,** each end by its own kind of site: finding a spot and walking in where you arrive, walking back and getting out where you leave. The lodging's own parking counts as a small site. Typical defaults per end:
   - small site, easy lot or street parking: 5 min
   - busy trailhead, downtown garage, major museum or attraction: 10–15 min
   - theme park, stadium, or anywhere with a parking tram or mandatory shuttle: 20–30 min
 - If a lot is known to fill early (popular trailheads, timed-entry parks), say what time to arrive by and name the fallback (shuttle, overflow lot, different order).
-- Show it compactly, e.g. “Drive 40 min + 5 buffer + 15 parking ≈ 1 hr”.
+- Show it compactly, e.g. “Drive 40 min + 5 buffer + 5 parking at the lodging + 15 at a busy trailhead ≈ 1 hr 5 min”.
+- **Timetabled legs** (flights, trains, ferries) use the schedule, with no +10% and no parking.
+- **When a leg is tight:** the +10% is already slack. Call a leg broken only when travel + buffer misses the time available by more than about 15 minutes. If it's tight by less, or only because of parking, keep the plan and give an arrive-by time or a note; don't flag the day.
 
 ### Arrival and departure days
 Ask for arrival and departure times (flight times, or when they will leave home and arrive if driving) as soon as travel is booked: in Step 3's Please confirm list if the user says travel is booked, otherwise in Step 5. Until then use a **PLACEHOLDER** time, list it under *Your input needed*, and re-check Day 1 and the last day once it's known.
@@ -118,6 +120,8 @@ Check every activity, and every named restaurant, against the **specific date** 
 - day-of-week closures (many museums close on Mondays or Tuesdays), seasonal hours and closures, holidays, special events and early closings
 - **last entry** separately from closing time; timed-entry slot times; shuttle, tram or ferry last-return times; seasonal roads
 - If a source doesn't state hours for that day, **do not assume it is open**: mark it **UNVERIFIED**, plan an alternative, and put it on the booking/research checklist.
+- **Sites with no hours:** when the official source says a site is open 24 hours or has no gate (trails, viewpoints, public squares), note that once with the source. Then check only permits, seasonal road closures and conditions for it.
+- Put every still-UNVERIFIED hour on the research checklist as **one item** that lists each activity and date, not one item per activity.
 - The group must arrive within opening hours with enough time before last entry or closing to do the whole planned visit.
 - When a revision moves an activity to a different day, check the hours again for the new date.
 
@@ -127,7 +131,7 @@ Meals are part of the plan, not leftover gaps, but they should fit the group and
 **The group's rhythm** (meal times, snack needs) comes from the age defaults and pace answer in **Calibration defaults**; dietary needs and allergies come from the Step 3 follow-up; whether food is a highlight comes from the “great food” interest. Lodging breakfast or a kitchen is known once lodging is chosen in Step 5. Don't ask separate meal questions unless the user raises them.
 
 **Plan each day's meals:**
-- **Timing comes from the group's rhythm.** If unknown, default to breakfast 7:00–9:00 AM, lunch 11:30 AM–1:30 PM and dinner 5:30–7:30 PM, earlier for young children. Keep meals inside their window and never push one far past it to squeeze in an activity.
+- **Timing comes from the group's rhythm.** If unknown, default to breakfast 7:00–9:00 AM, lunch 11:30 AM–1:30 PM and dinner 5:30–7:30 PM, earlier for young children. Keep meals inside their window; within about 30 minutes either side counts as on time. Beyond that, flag it for the user's OK and say which meal flexes. Never push a meal far past its window to squeeze in an activity.
 - **How long a meal takes depends on its style.** Typical totals, including ordering and waiting: packed or grab-and-go 15–30 min; casual or counter service 45–60 min; sit-down 75–90 min, longer for groups of 8 or more. Add travel to the restaurant using the travel-leg rules unless it's at the activity. A meal that is a highlight is planned as an activity.
 - **Fit the meal to the day:**
   - picnic or packed lunch on trail, beach and park days
@@ -165,6 +169,8 @@ Use these to fill in everything discovery doesn't ask. They are starting assumpt
 
 Adjust day fill down 5–10 points when a child under 6 or an adult who tires sooner sets the limits, or when "too much walking" or "long drives" ruins a day. Adjust up for adults-only or teen groups. Reasons don't stack past 10 points in total. Never plan above 85% or below 60%.
 
+Day fill is a **drafting target**: use it to decide how much goes into a day. The stress test doesn't report each full day; early starts and late returns are judged by **Hard days**. A meal eaten during an activity (a trail lunch) counts once.
+
 ### Defaults by age
 When ages differ, the person who tires first sets each default for the **shared core of the day**. In larger or mixed groups, offer optional early starts, late extensions or split activities for those who want more (e.g., part of the group arrives at opening and the rest join at 10:00 AM), and when the destination is walking-heavy, propose mobility aids such as a scooter or wheelchair rental. List these under "Check these first." Use the "adult who tires sooner" row only when Q4 flags that person; otherwise don't assume an older adult is limited by age alone, and list the assumption under "Check these first."
 
@@ -178,6 +184,13 @@ When ages differ, the person who tires first sets each default for the **shared 
 | Adult who tires sooner (flagged in Q4) | 9:00 AM | rest break | 5:30–6:30 PM | 8:00 PM | 1–3 mi with places to sit | 1.5–2 hrs | as wanted |
 
 The pace answer sets the day window; age needs (naps, bedtime) still apply inside it. If they conflict (e.g., Full days with a toddler), plan around the age need and say so as an assumption.
+
+### Hard days
+A day is **hard** when the group leaves before the day window starts or gets back after it ends. Leaving means the first drive, activity, check-out or flight; getting back means the last drive, activity or flight. Meals and rest at the lodging don't count, so a 7:00 AM breakfast doesn't make a day hard.
+
+Default: **no more than 2 hard days in a row**, followed by a lighter day. The person who tires first can lower that; the user's own limit overrides.
+
+In the stress test, report a run of hard days once, naming each day and its leave and return times.
 
 ### Other inferred defaults
 - **Meals:** times from the age table; style from the Meals rules (picnic on trail days, eat at the venue, early dinner after long days).
@@ -274,7 +287,7 @@ For each substantial activity give: physical effort (Easy / Moderate / Strenuous
 Then immediately create a **one-page visual itinerary marked DRAFT** (see Visual itinerary), so the user can see the first cut. Ask what they'd change.
 
 ### Step 8 — Stress test
-Test: travel legs with the +10% buffer and parking time on drives, realistic transitions, arrival/departure-day usable hours, opening hours and last entry on each scheduled date, physical effort and long days in a row, kid fatigue and variety, meals (inside the group's windows, near where the group is, food available in remote stretches), what gets cut or which meal flexes if 60–90 minutes late, weather and safety, reservations/tickets/timed entry, budget, crowds. Report each finding as **Applied** or **Needs your OK**. Regenerate the DRAFT visual if the plan changed.
+Test: travel legs with the +10% buffer and parking time on drives, realistic transitions, arrival/departure-day usable hours, opening hours and last entry on each scheduled date, physical effort and long days in a row, kid fatigue and variety, meals (inside the group's windows, near where the group is, food available in remote stretches), what gets cut or which meal flexes if 60–90 minutes late, weather and safety, reservations/tickets/timed entry, budget, crowds. Report real conflicts first (two things at once, a site closed or past last entry, a leg that can't fit, over budget), then items that **Need your OK**. Summarize **Applied** items in one line. Report a pattern once (a run of hard days, all unchecked hours), not once per day or per activity. Regenerate the DRAFT visual if the plan changed.
 
 ### Step 9 — Lock and finalize
 Ask: “Shall I lock the itinerary?” Once locked, produce the final Master Trip Plan (`templates/master-trip-plan.md`), Decision Log, booking checklist with links, cost summary, contingency summary, and the **final** visual itinerary (DRAFT label removed).
