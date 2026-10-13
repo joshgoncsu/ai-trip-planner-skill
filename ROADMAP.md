@@ -1,7 +1,7 @@
 # Roadmap — AI Trip Planner
 
 ## Current release
-**v2.1.0 — Fewer, clearer stress-test findings** (hard days, travel-leg tolerance, opening-hours and meal-window rules, conflicts-first stress-test report; see CHANGELOG), on top of **v2.0.0 — Know more, ask less: calibration redesign** (section 1 below)
+**v2.2.0 — Clearer fixes, trains, and planning ahead** (boarding time, conflict fixes, stress-test limits and running-late test, hours months ahead, must-do question, whole-trip transport cost, opening dates, saved profiles, cost status and cash timeline; see CHANGELOG), on top of **v2.1.0 — Fewer, clearer stress-test findings** and **v2.0.0 — Know more, ask less: calibration redesign** (section 1 below)
 
 Built on v1's core workflow:
 
@@ -20,7 +20,7 @@ To do that while asking less, build experienced-planner judgment into the skill 
 
 "Get the most out of it" means **more value per hour, not more hours**: smart stacking, routing and timing make room for more of the best experiences, while the day-fill and rhythm rules below keep the plan realistic.
 
-v1 asks roughly 25–30 discovery questions (7+ rounds) before the user sees anything about the destination. v2 reaches the first proposal (destination highlights) in **3 rounds of 4 questions**: 4 trip basics (where, when, getting there, what's already booked) plus the 8 core calibration questions below, without losing plan quality. Starting point, dietary and booking details are Step 3 follow-ups.
+v1 asks roughly 25–30 discovery questions (7+ rounds) before the user sees anything about the destination. v2 reaches the first proposal (destination highlights) in **3 rounds of 4 questions** (v2.2: Round 1 adds an optional must-do question as its fifth): 4 trip basics (where, when, getting there, what's already booked) plus the 8 core calibration questions below, without losing plan quality. Starting point, dietary and booking details are Step 3 follow-ups.
 
 ## Guiding principles
 1. **Ages first, then infer.** Ages and group composition imply most defaults: naps, attention span, meal timing, walking range, bedtime.
@@ -67,7 +67,7 @@ Follow-up only when Q2 flags it: **What dietary needs or allergies should I plan
 
 **Group Profile changes:** each line is labelled **Told me** or **Assumed** (with confidence). A later answer that contradicts an assumption is called out and the profile is updated.
 
-## 2. Planning playbook (v2.2)
+## 2. Planning playbook (v2.3)
 
 A new reference file, `references/planning-playbook.md`, holds the planner knowledge the skill applies by default instead of asking for it. The first source is the **adventure-dashboard** project's specs and engine defaults, refined by interviewing the maintainer. Contents:
 - **Default profiles by group type and age band** (toddler, school-age, teens, adults only, multigenerational): walking range, attention span, nap/bedtime, meal rhythm, heat tolerance.
@@ -119,11 +119,12 @@ A new reference file, `references/planning-playbook.md`, holds the planner knowl
 - **Booking knowledge:** high-scarcity items, typical reservation lead times by category, lottery/permit patterns.
 - **Rules of thumb for what depends on what:** "rain → slot canyons off", "late arrival → drop the optional item", "group size > permit limit → split or substitute".
 
-## 3. Effort model and stress test (v2.3)
+## 3. Effort model and stress test (v2.4)
 
 Use the playbook to:
 - Estimate activity effort beyond mileage/time (physical, logistical, transition, weather sensitivity, kid-engagement risk, recovery impact), with no extra user questions.
 - Run a broader stress test that flags overpacked days, excessive consecutive effort, travel share of the day, missing recovery, fragile reservations, weather-sensitive days, budget concentration and single points of failure, each reported as **Applied** or **Needs your OK**.
+- The Stress-test limits table and the running-late test shipped in v2.2.0; this broader stress test builds on them.
 
 ---
 
@@ -150,9 +151,12 @@ Calibration redesign: the core question set, inference from ages, Told me / Assu
 Fewer, clearer stress-test findings: hard days, travel-leg tolerance, opening-hours and meal-window rules, conflicts-first report (released).
 
 ### v2.2.0
-Planning playbook, seeded from adventure-dashboard and the maintainer interview.
+Clearer fixes, trains, and planning ahead: boarding time, conflict fixes, stress-test limits, hours months ahead, must-do question, whole-trip transport cost, opening dates, saved profiles, cost status (released).
 
 ### v2.3.0
+Planning playbook, seeded from adventure-dashboard and the maintainer interview.
+
+### v2.4.0
 Effort model and expanded stress test built on the playbook.
 
 ### v3.x

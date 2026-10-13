@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.2.0 — Clearer fixes, trains, and planning ahead
+1. Trains and ferries get boarding time before departure (about 15–30 min for an intercity train, 30+ for a screened ferry); arrival and departure days by train or bus follow the same pattern as flights.
+2. Each stress-test conflict now says why it fails in numbers, what passing means, and 1–3 fixes (smallest first, naming everything that moves, re-checked).
+3. New **Stress-test limits**: travel share of a sightseeing day, a daily break, activity mix against the user's picks, visit length against attention span, outdoor days without a backup; and a defined running-late test (60 and 90 minutes, breaks vs stretches).
+4. Planning months ahead: current regular hours are used for drafting, labelled "not yet confirmed for these dates", with a recheck time and separate holiday checks.
+5. Round 1 gains its own optional question for must-dos already in mind; they become Told me Musts and anchor the highlights. The 4-question limit stays, with Round 1 as its one exception (5 questions); the old Q5–Q12 are now Q6–Q13.
+6. Step 5 compares ways of getting there and around on projected whole-trip cost (transit at each base; gas, tolls and parking; rental and fees).
+7. Booking checklist gains an "Opens on" date; booking urgency and Step 5 name opening dates when known.
+8. A saved Group Profile can start the next trip: lines carry over, ages are re-checked, and only what changed is asked.
+9. Cost lines carry a status (Estimate → Quoted → Booked → Paid) and due dates; totals are stated as a range with the count still estimated; a cash timeline follows bookings.
+
 ## 2.1.0 — Fewer, clearer stress-test findings
 Based on a 10-day test draft whose stress test buried a few real conflicts among many passes and repeated per-day notes:
 1. New **Hard days** default in Calibration defaults: a day is hard when the group leaves before the day window starts or gets back after it ends (meals and rest at the lodging don't count). No more than 2 in a row, then a lighter day; the user's own limit overrides. A run of hard days is reported once.
