@@ -20,7 +20,7 @@ _Status: DRAFT / LOCKED · Last updated: [date]_
 Each activity links to its official site. For each day:
 - Usable hours (clipped on arrival and departure days, with the arithmetic)
 - Activities with opening hours / last entry checked for that date
-- Travel legs: time + 10% buffer + parking at each end on drives (timetabled legs use the schedule)
+- Travel legs: time + 10% buffer + parking at each end on drives; timetabled legs use the schedule plus boarding time
 - Meals: time, style, where (named restaurant or 2–3 linked options), and which meal flexes if the day runs late
 - Snack breaks, remote stretches with no food
 ## 10. Alternatives and contingencies
@@ -29,12 +29,19 @@ Each activity links to its official site. For each day:
 ### $
 ### $$
 ### $$$
-### Trip cost estimate (in the user's chosen budget form)
+### Cost lines
+| Item | Category | Amount | Status (Estimate / Quoted / Booked / Paid) | Due / refundable until | Source |
+|---|---|---|---|---|---|
+
+### Cash timeline
+What's due when, and the last date each booking can be cancelled for a refund.
+
+### Trip cost estimate (in the user's chosen budget form) — as a range, with how many lines are still estimates
 ## 12. Booking / research checklist
 Include restaurant reservations and any hours marked UNVERIFIED.
 
-| Item | Link | Book by | Status |
-|---|---|---|---|
+| Item | Link | Opens on | Book by | Status |
+|---|---|---|---|---|
 ## 13. Decision log
 ## 14. Assumptions and placeholders
 ## 15. Lessons learned

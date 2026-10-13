@@ -16,6 +16,7 @@ The 2–3 items that would change the plan most: risky assumptions, clashes betw
 | Dietary needs / allergies | | |
 
 ## Interests
+- Must-dos already named (Told me):
 - Makes a day great:
 - Ruins a day:
 - Evening outings:
