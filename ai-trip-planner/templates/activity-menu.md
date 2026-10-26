@@ -1,11 +1,11 @@
 # Destination Highlights and Activity Menu
 
 ## Part 1 — Destination highlights (Step 4, quick interest check)
-8–12 headline experiences matched to the group's interests, plus 1–2 they might not expect. One line each with a link. No deep research yet.
+8–12 headline experiences per base or region, matched to the group's interests, plus 1–2 they might not expect. One line each with a link. No deep research yet.
 
-| # | Highlight (link) | One line | Category |
-|---|---|---|---|
-| 1 | [Name](url) | What it is and why it fits | e.g., Museums |
+| # | Highlight (link) | One line | Category | Signature |
+|---|---|---|---|---|
+| 1 | [Name](url) | What it is and why it fits | e.g., Museums | Signature / blank |
 
 > Ask (multi-select, clickable if available): “Which of these appeal?” and “Any whole category to add or drop?”
 

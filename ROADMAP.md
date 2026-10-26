@@ -1,7 +1,7 @@
 # Roadmap — AI Trip Planner
 
 ## Current release
-**v2.2.0 — Clearer fixes, trains, and planning ahead** (boarding time, conflict fixes, stress-test limits and running-late test, hours months ahead, must-do question, whole-trip transport cost, opening dates, saved profiles, cost status and cash timeline; see CHANGELOG), on top of **v2.1.0 — Fewer, clearer stress-test findings** and **v2.0.0 — Know more, ask less: calibration redesign** (section 1 below)
+**v2.3.0 — Bigger groups, trips abroad, clearer highlights** (highlights per region with signature sights, new travelers on a saved profile, local dining hours, groups of 8+, overnight flights out, other currencies, minimum ages and stair climbs, running-late cuts, printed one-pager; see CHANGELOG), on top of **v2.2.0 — Clearer fixes, trains, and planning ahead**, **v2.1.0 — Fewer, clearer stress-test findings** and **v2.0.0 — Know more, ask less: calibration redesign** (section 1 below)
 
 Built on v1's core workflow:
 
@@ -67,7 +67,7 @@ Follow-up only when Q2 flags it: **What dietary needs or allergies should I plan
 
 **Group Profile changes:** each line is labelled **Told me** or **Assumed** (with confidence). A later answer that contradicts an assumption is called out and the profile is updated.
 
-## 2. Planning playbook (v2.3)
+## 2. Planning playbook (v2.4)
 
 A new reference file, `references/planning-playbook.md`, holds the planner knowledge the skill applies by default instead of asking for it. The first source is the **adventure-dashboard** project's specs and engine defaults, refined by interviewing the maintainer. Contents:
 - **Default profiles by group type and age band** (toddler, school-age, teens, adults only, multigenerational): walking range, attention span, nap/bedtime, meal rhythm, heat tolerance.
@@ -76,6 +76,7 @@ A new reference file, `references/planning-playbook.md`, holds the planner knowl
   - Rank by fit to this group, quality, "only here" uniqueness (favor what they can't do at home), and value per hour (the experience relative to its total time cost, travel included). A great free experience competes equally with paid ones.
   - Cut mediocre options to make room for excellent ones: one great 3-hour experience beats two average ones plus the drive between them.
   - Present the shortlist (Step 6 menu), not the long list, with the pre-filled picks. Size it to the trip: about 2–3 options per trip day (e.g., 15–20 for a week).
+  - Step 4's per-region highlight count shipped in v2.3.0; the playbook's menu sizing (2–3 options per trip day) builds on it.
 - **Stacking adventures within a day:**
   - **Group by area:** same-area activities share a day; route as a line or a loop, never back and forth.
   - **Fix the hard times first:** timed entries, tours, reservations and opening-only windows go in first; everything else fills around them.
@@ -119,7 +120,7 @@ A new reference file, `references/planning-playbook.md`, holds the planner knowl
 - **Booking knowledge:** high-scarcity items, typical reservation lead times by category, lottery/permit patterns.
 - **Rules of thumb for what depends on what:** "rain → slot canyons off", "late arrival → drop the optional item", "group size > permit limit → split or substitute".
 
-## 3. Effort model and stress test (v2.4)
+## 3. Effort model and stress test (v2.5)
 
 Use the playbook to:
 - Estimate activity effort beyond mileage/time (physical, logistical, transition, weather sensitivity, kid-engagement risk, recovery impact), with no extra user questions.
@@ -154,9 +155,12 @@ Fewer, clearer stress-test findings: hard days, travel-leg tolerance, opening-ho
 Clearer fixes, trains, and planning ahead: boarding time, conflict fixes, stress-test limits, hours months ahead, must-do question, whole-trip transport cost, opening dates, saved profiles, cost status (released).
 
 ### v2.3.0
-Planning playbook, seeded from adventure-dashboard and the maintainer interview.
+Bigger groups, trips abroad, clearer highlights: highlights per region, new travelers on a saved profile, local dining hours, groups of 8+, overnight flights out, other currencies, minimum ages and stair climbs, running-late cuts, printed one-pager (released).
 
 ### v2.4.0
+Planning playbook, seeded from adventure-dashboard and the maintainer interview.
+
+### v2.5.0
 Effort model and expanded stress test built on the playbook.
 
 ### v3.x

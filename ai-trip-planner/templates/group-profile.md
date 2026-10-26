@@ -15,6 +15,8 @@ The 2–3 items that would change the plan most: risky assumptions, clashes betw
 | Mobility / accessibility / health | | |
 | Dietary needs / allergies | | |
 
+- Lines that apply only to part of the group:
+
 ## Interests
 - Must-dos already named (Told me):
 - Makes a day great:

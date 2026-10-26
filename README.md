@@ -16,7 +16,7 @@ It:
 8. Stress-tests time, effort, kids, budget and weather.
 9. Makes it obvious when your input is needed, with recommendations you can accept in a word.
 10. Maintains a Master Trip Plan and Decision Log you can save and resume later.
-11. Produces a final one-page visual itinerary (PNG, HTML, or text) with paid activities color-coded.
+11. Produces a final one-page visual itinerary (PNG, HTML, or text) with paid activities color-coded; it also comes as a printed version.
 12. Captures post-trip lessons and updates your group profile for next time.
 
 ## Install

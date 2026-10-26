@@ -1,5 +1,5 @@
 # Visual Itinerary Specification
-Purpose: a one-page, phone-friendly picture of the trip for the group text.
+Purpose: a one-page picture of the trip: a phone version for the group text, and a printed version for the fridge or the car.
 
 When:
 - **DRAFT** — as soon as the first itinerary exists (Step 7), with a visible “DRAFT — not final” label. Regenerate after each revision.
@@ -13,6 +13,14 @@ Required:
 - paid activities highlighted — color the whole activity line, not just the price marker
 - cost legend
 - readable on a phone
+
+## Printed version
+- **Landscape, one sheet**, sized to print on US letter or A4. Text never smaller than about 8 pt when printed: drop detail instead of shrinking.
+- **A grid:** one column per day (date, base, day type), four rows: Morning, Midday, Afternoon, Evening. Each item in a row gets its own line, with its start time, a short name, its cost color, and the Optional label or must-do mark.
+- **Travel** is one thin grey line with its time ("Drive 1 hr 10 min"); meals are one word ("Lunch") unless named.
+- **When a row runs out of room,** drop rest and free time first, then optional items, then shorten names. Never drop a must-do, a timed booking or a travel leg.
+- **Trips over about 8 days** split onto two pages, with the route and legend on both.
+- Same rules as the phone version: current plan only, DRAFT until locked, cost legend, no invented items.
 
 Cost colors (defaults; use the user's tiers if they set their own):
 | Tier | Per person | Highlight | Text-only marker |

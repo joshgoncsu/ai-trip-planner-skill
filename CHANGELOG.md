@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.3.0 — Bigger groups, trips abroad, clearer highlights
+1. Step 4 shows 8–12 highlights for each base or region and always includes each place's signature sights, marked so they can be dropped.
+2. A saved Group Profile with new people on the trip asks one short round for them and marks lines that apply to only part of the group.
+3. Meal times are checked against local dining hours; a clash is raised in Step 3, and a later dinner moves the day's end.
+4. Groups of about 8 or more get a Check these first item (lodging, vehicles, group-size limits, big tables), lodging that sleeps everyone in Step 5, and group-size limits as a booking need in Step 6.
+5. An overnight flight out is judged by when the group leaves, not when it lands, and the night in the air isn't a lodging gap.
+6. Prices abroad stay in their own currency, with one dated exchange rate for totals, budget and tiers.
+7. Minimum ages and long stair climbs join the just-in-time questions, with handling options.
+8. Running late: only gaps and rest absorb the delay; shortening an activity is a cut, so the day breaks.
+9. A printed version of the one-page itinerary: a landscape day × time-of-day grid, an 8 pt floor, rest dropped first, two pages for trips over 8 days.
+
 ## 2.2.0 — Clearer fixes, trains, and planning ahead
 1. Trains and ferries get boarding time before departure (about 15–30 min for an intercity train, 30+ for a screened ferry); arrival and departure days by train or bus follow the same pattern as flights.
 2. Each stress-test conflict now says why it fails in numbers, what passing means, and 1–3 fixes (smallest first, naming everything that moves, re-checked).
