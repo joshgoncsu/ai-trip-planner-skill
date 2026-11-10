@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.4.0 — Place strengths, hot-weather days, small fixes
+1. Step 3 names what each place is known for and asks once whether to lean into those strengths; Step 4 highlights and the Step 6 menu are weighted by the answer.
+2. Hot-weather days keep the pace table's midday break and fill the hot hours with indoor sights; each draft day is checked against the fill target before it's shown, and none goes under 60%.
+3. Running late: the flex meal may shrink to grab-and-go while absorbing the delay; shortening an activity or skipping boarding time is a cut.
+4. Day 1 when flying out from home: leave at departure minus the airport buffer and travel to the airport.
+5. Step 6 fits the 4-question limit: the menu ask counts as one, and extra just-in-time questions go to the next reply.
+6. An exchange rate that can't be checked live is marked UNVERIFIED and goes on the research checklist.
+
 ## 2.3.0 — Bigger groups, trips abroad, clearer highlights
 1. Step 4 shows 8–12 highlights for each base or region and always includes each place's signature sights, marked so they can be dropped.
 2. A saved Group Profile with new people on the trip asks one short round for them and marks lines that apply to only part of the group.

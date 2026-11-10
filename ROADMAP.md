@@ -1,7 +1,7 @@
 # Roadmap — AI Trip Planner
 
 ## Current release
-**v2.3.0 — Bigger groups, trips abroad, clearer highlights** (highlights per region with signature sights, new travelers on a saved profile, local dining hours, groups of 8+, overnight flights out, other currencies, minimum ages and stair climbs, running-late cuts, printed one-pager; see CHANGELOG), on top of **v2.2.0 — Clearer fixes, trains, and planning ahead**, **v2.1.0 — Fewer, clearer stress-test findings** and **v2.0.0 — Know more, ask less: calibration redesign** (section 1 below)
+**v2.4.0 — Place strengths, hot-weather days, small fixes** (what each place is known for, hot-weather midday breaks and day-fill check, flex meal when running late, airport buffer flying out, Step 6 question limit, unverified exchange rates; see CHANGELOG), on top of **v2.3.0 — Bigger groups, trips abroad, clearer highlights**, **v2.2.0 — Clearer fixes, trains, and planning ahead**, **v2.1.0 — Fewer, clearer stress-test findings** and **v2.0.0 — Know more, ask less: calibration redesign** (section 1 below)
 
 Built on v1's core workflow:
 
@@ -67,7 +67,7 @@ Follow-up only when Q2 flags it: **What dietary needs or allergies should I plan
 
 **Group Profile changes:** each line is labelled **Told me** or **Assumed** (with confidence). A later answer that contradicts an assumption is called out and the profile is updated.
 
-## 2. Planning playbook (v2.4)
+## 2. Planning playbook (v2.5)
 
 A new reference file, `references/planning-playbook.md`, holds the planner knowledge the skill applies by default instead of asking for it. The first source is the **adventure-dashboard** project's specs and engine defaults, refined by interviewing the maintainer. Contents:
 - **Default profiles by group type and age band** (toddler, school-age, teens, adults only, multigenerational): walking range, attention span, nap/bedtime, meal rhythm, heat tolerance.
@@ -120,7 +120,7 @@ A new reference file, `references/planning-playbook.md`, holds the planner knowl
 - **Booking knowledge:** high-scarcity items, typical reservation lead times by category, lottery/permit patterns.
 - **Rules of thumb for what depends on what:** "rain → slot canyons off", "late arrival → drop the optional item", "group size > permit limit → split or substitute".
 
-## 3. Effort model and stress test (v2.5)
+## 3. Effort model and stress test (v2.6)
 
 Use the playbook to:
 - Estimate activity effort beyond mileage/time (physical, logistical, transition, weather sensitivity, kid-engagement risk, recovery impact), with no extra user questions.
@@ -158,9 +158,12 @@ Clearer fixes, trains, and planning ahead: boarding time, conflict fixes, stress
 Bigger groups, trips abroad, clearer highlights: highlights per region, new travelers on a saved profile, local dining hours, groups of 8+, overnight flights out, other currencies, minimum ages and stair climbs, running-late cuts, printed one-pager (released).
 
 ### v2.4.0
-Planning playbook, seeded from adventure-dashboard and the maintainer interview.
+Place strengths, hot-weather days, small fixes (shipped).
 
 ### v2.5.0
+Planning playbook, seeded from adventure-dashboard and the maintainer interview.
+
+### v2.6.0
 Effort model and expanded stress test built on the playbook.
 
 ### v3.x

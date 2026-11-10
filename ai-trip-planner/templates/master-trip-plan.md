@@ -29,7 +29,7 @@ Each activity links to its official site. For each day:
 ### $
 ### $$
 ### $$$
-Exchange rate used: ___ (checked ___)
+Exchange rate used: ___ (checked ___, or UNVERIFIED)
 
 ### Cost lines
 | Item | Category | Amount | Status (Estimate / Quoted / Booked / Paid) | Due / refundable until | Source |

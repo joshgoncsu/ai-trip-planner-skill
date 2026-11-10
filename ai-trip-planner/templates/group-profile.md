@@ -21,6 +21,7 @@ The 2–3 items that would change the plan most: risky assumptions, clashes betw
 - Must-dos already named (Told me):
 - Makes a day great:
 - Ruins a day:
+- Lean into each place's strengths (per place):
 - Evening outings:
 - Trip type (inferred):
 
