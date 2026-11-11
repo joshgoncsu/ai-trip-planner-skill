@@ -12,12 +12,12 @@
 ---
 
 ## Part 2 — Activity menu (Step 6)
-Built around the Step 4 picks. Group options by category (10–20 total, plus 1–3 wildcards). Every option needs a link you actually retrieved; otherwise name the official source and mark UNVERIFIED. **Pre-fill “My pick”** with your recommendation for every row.
+Built around the Step 4 picks. Research wide, then show the top-ranked options (fit, “only here”, value per hour; free and self-guided rank equal to paid), grouped by category (10–20 total, plus 1–3 wildcards). Every option needs a link you actually retrieved; otherwise name the official source and mark UNVERIFIED. **Pre-fill “My pick”** with your recommendation for every row, with no more Paid tours as Must or Want than the paid-tour cap.
 
 ### [Category, e.g., Landmarks / Museums / Outdoors / Food / Kids]
-| # | Option (link) | What it is | Why it fits you | Effort | Total time | Cost | Ages | Booking | My pick |
-|---|---|---|---|---|---|---|---|---|---|
-| 1 | [Name](url) | One line | One line | Easy / Moderate / Strenuous | e.g., 3 hrs incl. travel | FREE / $ / $$ / $$$ | e.g., 6+ | e.g., Timed tickets, ~2 weeks ahead | Must / Want / Maybe / Skip |
+| # | Option (link) | What it is · why it's special | Type · best time | Why it fits you | Effort | Total time | Cost | Ages | Booking | My pick |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | [Name](url) | One line | Hidden or local / Self-guided / Icon done smarter / Paid tour · e.g., low tide, sunrise, before the crowds | One line | Easy / Moderate / Strenuous | e.g., 3 hrs incl. travel | FREE / $ / $$ / $$$ | e.g., 6+ | e.g., Timed tickets, ~2 weeks ahead | Must / Want / Maybe / Skip |
 
 ### Effort ladder (for hikes, long walks, bike rides, etc.)
 Lets the user choose without knowing the destination. Mark your calibrated recommendation.

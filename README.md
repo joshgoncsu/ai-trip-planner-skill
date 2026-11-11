@@ -1,6 +1,6 @@
 # AI Trip Planner Skill
 
-Version 2.4.0. A reusable, model-agnostic workflow for planning detailed family/group trips of any kind (sightseeing and landmarks, cities, national parks and outdoors, beach, theme parks, road trips) with Claude, ChatGPT, Gemini, or any AI tool that supports the [Agent Skills](https://agentskills.io) `SKILL.md` format.
+Version 2.5.0. A reusable, model-agnostic workflow for planning detailed family/group trips of any kind (sightseeing and landmarks, cities, national parks and outdoors, beach, theme parks, road trips) with Claude, ChatGPT, Gemini, or any AI tool that supports the [Agent Skills](https://agentskills.io) `SKILL.md` format.
 
 ## What it does
 The planner follows **ASK → OFFER OPTIONS → USER CHOOSES → DRAFT → CHALLENGE → REVISE → LOCK → DOCUMENT**.
@@ -10,9 +10,9 @@ It:
 2. Tracks open decisions and comes back to each one with options and a recommendation.
 3. Shows quick destination highlights so you can say what appeals before detailed research.
 4. Compares logistics options: airport, bases, lodging type, rental car vs. transit.
-5. Presents an activity menu with links and pre-filled recommended picks (Must / Want / Maybe / Skip); you accept or change them in one line before any itinerary is built.
+5. Presents a ranked activity menu with links: each option says why it's special and what type it is (hidden or local, self-guided, an icon done smarter, or a paid tour), and free experiences compete equally with paid ones. Picks are pre-filled (Must / Want / Maybe / Skip); you accept or change them in one line before any itinerary is built.
 6. Researches current hours, tickets, reservations, closures and weather, or flags them as unverified if the AI can't browse.
-7. Builds a realistic day-by-day itinerary and a one-page **DRAFT** visual of it right away.
+7. Builds a realistic day-by-day itinerary, grouped by area, built around fixed times, with each activity at its best time of day, and a one-page **DRAFT** visual of it right away.
 8. Stress-tests time, effort, kids, budget and weather.
 9. Makes it obvious when your input is needed, with recommendations you can accept in a word.
 10. Maintains a Master Trip Plan and Decision Log you can save and resume later.

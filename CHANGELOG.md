@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.5.0 — Better options, smarter days
+1. Facts (hours, prices, rules, closures) still come from official sources; ideas also come from local guides, park and ranger pages and trip reports. A place with no official page links the best source found.
+2. Step 6 researches wide, then ranks by fit, "only here" uniqueness and value per hour; free and self-guided experiences rank equal to paid ones.
+3. Every menu option has a one-line "why it's special" and a type: Hidden or local · Self-guided · Icon done smarter · Paid tour.
+4. Famous sights come with a smarter way to do them; options timed to tide, sunrise, light or heat note their best time, are planned then, and have those times checked for the date.
+5. Paid tours are capped (default about 1 per 3 trip days). One Step 6 question, asked only when it would change the menu, sets the cap and counts toward the 4-question limit.
+6. Step 7 stacks each day: group by area, fix the hard times first, order by best time of day, use the drives, early start then early finish.
+7. Hot-weather days: the hot hours are about 11:00 AM–4:00 PM; the break is counted door to door, and outside it the hot hours hold indoor or covered sights, not extra rest.
+
 ## 2.4.0 — Place strengths, hot-weather days, small fixes
 1. Step 3 names what each place is known for and asks once whether to lean into those strengths; Step 4 highlights and the Step 6 menu are weighted by the answer.
 2. Hot-weather days keep the pace table's midday break and fill the hot hours with indoor sights; each draft day is checked against the fill target before it's shown, and none goes under 60%.

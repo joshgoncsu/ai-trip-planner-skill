@@ -22,6 +22,7 @@ The 2–3 items that would change the plan most: risky assumptions, clashes betw
 - Makes a day great:
 - Ruins a day:
 - Lean into each place's strengths (per place):
+- Paid tours (cap):
 - Evening outings:
 - Trip type (inferred):
 

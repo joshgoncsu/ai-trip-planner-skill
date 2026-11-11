@@ -1,7 +1,7 @@
 # Roadmap — AI Trip Planner
 
 ## Current release
-**v2.4.0 — Place strengths, hot-weather days, small fixes** (what each place is known for, hot-weather midday breaks and day-fill check, flex meal when running late, airport buffer flying out, Step 6 question limit, unverified exchange rates; see CHANGELOG), on top of **v2.3.0 — Bigger groups, trips abroad, clearer highlights**, **v2.2.0 — Clearer fixes, trains, and planning ahead**, **v2.1.0 — Fewer, clearer stress-test findings** and **v2.0.0 — Know more, ask less: calibration redesign** (section 1 below)
+**v2.5.0 — Better options, smarter days** (wider sources for ideas, ranked menus with why-it's-special types, smarter famous sights, a paid-tour cap, timing to nature, five day-stacking rules; see CHANGELOG), on top of **v2.4.0 — Place strengths, hot-weather days, small fixes** (what each place is known for, hot-weather midday breaks and day-fill check, flex meal when running late, airport buffer flying out, Step 6 question limit, unverified exchange rates; see CHANGELOG), on top of **v2.3.0 — Bigger groups, trips abroad, clearer highlights**, **v2.2.0 — Clearer fixes, trains, and planning ahead**, **v2.1.0 — Fewer, clearer stress-test findings** and **v2.0.0 — Know more, ask less: calibration redesign** (section 1 below)
 
 Built on v1's core workflow:
 
@@ -67,7 +67,9 @@ Follow-up only when Q2 flags it: **What dietary needs or allergies should I plan
 
 **Group Profile changes:** each line is labelled **Told me** or **Assumed** (with confidence). A later answer that contradicts an assumption is called out and the profile is updated.
 
-## 2. Planning playbook (v2.5)
+## 2. Planning playbook (v2.5 in part; the rest v2.6)
+
+Shipped in v2.5.0, in SKILL.md rather than a reference file: research wide and rank (fit, “only here”, value per hour, free equal to paid) from Choosing the best options; group by area, fix the hard times first, order by best time of day and use the drives from Stacking adventures within a day; and Early start → early finish from the day-shaping rules. Everything else below is still open.
 
 A new reference file, `references/planning-playbook.md`, holds the planner knowledge the skill applies by default instead of asking for it. The first source is the **adventure-dashboard** project's specs and engine defaults, refined by interviewing the maintainer. Contents:
 - **Default profiles by group type and age band** (toddler, school-age, teens, adults only, multigenerational): walking range, attention span, nap/bedtime, meal rhythm, heat tolerance.
@@ -161,10 +163,10 @@ Bigger groups, trips abroad, clearer highlights: highlights per region, new trav
 Place strengths, hot-weather days, small fixes (shipped).
 
 ### v2.5.0
-Planning playbook, seeded from adventure-dashboard and the maintainer interview.
+Better options, smarter days: wider sources for ideas, ranked menus with types, smarter famous sights, paid-tour cap, timing to nature, five day-stacking rules from the playbook (released).
 
 ### v2.6.0
-Effort model and expanded stress test built on the playbook.
+The rest of the planning playbook, seeded from adventure-dashboard and the maintainer interview, then the effort model and expanded stress test built on it.
 
 ### v3.x
 Structured state, group memory, learning engine, coordinated documents, IDE/agent deployment.

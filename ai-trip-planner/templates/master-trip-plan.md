@@ -17,9 +17,10 @@ _Status: DRAFT / LOCKED · Last updated: [date]_
 ## 7. Lodging
 ## 8. Master itinerary
 ## 9. Detailed day plans
-Each activity links to its official site. For each day:
+Each activity links to its official site, or the best source found when it has none. For each day:
 - Usable hours (clipped on arrival and departure days, with the arithmetic)
 - Activities with opening hours / last entry checked for that date
+- Nature-timed activities at their best time for that date (tide, sunrise, light, heat)
 - Travel legs: time + 10% buffer + parking at each end on drives; timetabled legs use the schedule plus boarding time
 - Meals: time, style, where (named restaurant or 2–3 linked options), and which meal flexes if the day runs late
 - Snack breaks, remote stretches with no food

@@ -44,6 +44,7 @@ Everything not asked here is filled in from **Calibration defaults** (SKILL.md) 
 | Lodging type, bases, getting around | Open decisions → Step 5 |
 | Arrival and departure times | Step 3 follow-up if booked, otherwise Step 5; PLACEHOLDER until known |
 | Ride limits, altitude, water/sand/snow, long tours, accessibility details | Just in time at Step 6, only if a menu option needs it |
+| How the group feels about paid tours | Default cap; asked at Step 6 only if the menu has more strong paid tours than the cap |
 
 ## Open decisions
 | Decision | Status (not sure / leaning) | Resolve at step |
